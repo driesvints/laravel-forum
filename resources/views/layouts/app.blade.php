@@ -14,7 +14,15 @@
     <div class="container">
         @include('partials.header')
 
-        @yield('content')
+        <div class="row">
+            <div class="col-xs-12 col-sm-9" id="sidebar">
+                @include('partials.sidebar')
+            </div>
+
+            <div class="col-xs-12 col-sm-3">
+                @yield('content')
+            </div>
+        </div>
 
         @include('partials.footer')
     </div>
