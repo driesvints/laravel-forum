@@ -8,7 +8,7 @@
 
         <div class="col-xs-12 col-sm-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Latest Discussions</div>
+                <div class="panel-heading">Create Discussion</div>
                 <div class="panel-body"></div>
 
                 @if (isset($discussions) && count($discussions) > 0)

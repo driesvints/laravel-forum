@@ -1,4 +1,4 @@
-@if (Route::is('forum/*'))
+@if (route()->is('forum/*'))
     <a href="#" class="btn btn-success btn-block">New Discussion</a>
 @endif
 
