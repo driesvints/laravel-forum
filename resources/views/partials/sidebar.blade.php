@@ -1,8 +1,6 @@
-@if (route()->is('forum/*'))
-    <a href="#" class="btn btn-success btn-block">New Discussion</a>
-@endif
+<a href="#" class="btn btn-success btn-block">New Discussion</a>
 
-@if (isset($groups))
+@if ($groups)
     <ul class="list-group">
         @foreach ($groups as $group)
             <li class="list-group-item">

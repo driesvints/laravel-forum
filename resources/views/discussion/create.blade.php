@@ -9,19 +9,16 @@
         <div class="col-xs-12 col-sm-3">
             <div class="panel panel-default">
                 <div class="panel-heading">Create Discussion</div>
-                <div class="panel-body"></div>
+                <div class="panel-body">
+                    <form action="/" method="post">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title">
+                        </div>
 
-                @if (isset($discussions) && count($discussions) > 0)
-                    <ul class="list-group">
-                        @foreach ($discussions as $discussion)
-                            <li class="list-group-item">
-                                {{-- TODO: Discussion Info --}}
-                            </li>
-                        @endforeach
-                    </ul>
-                @else
-                    No discussions to display.
-                @endif
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

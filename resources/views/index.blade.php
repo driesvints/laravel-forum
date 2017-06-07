@@ -5,7 +5,7 @@
         <div class="panel-heading">Latest Discussions</div>
         <div class="panel-body"></div>
 
-        @if (isset($discussions) && count($discussions) > 0)
+        @if ($discussions)
             <ul class="list-group">
                 @foreach ($discussions as $discussion)
                     <li class="list-group-item">
