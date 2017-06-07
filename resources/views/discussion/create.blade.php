@@ -16,6 +16,11 @@
                             <input type="text" name="title" id="title">
                         </div>
 
+                        <div class="form-group">
+                            <label for="content">Content</label>
+                            <textarea name="content" id="content"></textarea>
+                        </div>
+
                         <button class="btn btn-success">Submit</button>
                     </form>
                 </div>
