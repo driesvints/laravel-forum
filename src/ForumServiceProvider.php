@@ -17,7 +17,7 @@ class ForumServiceProvider extends ServiceProvider
             __DIR__ . '/config/forum.php' => config_path('forum.php'),
         ]);
 
-        $this->loadRoutesFrom(__DIR__ . '/routes/forum.php');
+        $this->setupRoutes();
     }
 
     /**
@@ -28,5 +28,15 @@ class ForumServiceProvider extends ServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Define the application routes.
+     *
+     * @return void
+     */
+    public function setupRoutes()
+    {
+        $this->loadRoutesFrom(__DIR__ . '/routes/forum.php');
     }
 }
