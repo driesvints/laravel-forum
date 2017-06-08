@@ -37,8 +37,6 @@ class ForumCommand extends Command
      */
     public function handle()
     {
-        $this->call('vendor:publish');
-
-        // TODO: Publish stubs as policies
+        //
     }
 }
